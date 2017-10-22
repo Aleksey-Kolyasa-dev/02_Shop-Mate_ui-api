@@ -1,0 +1,33 @@
+/*CATEGORY MENU*/
+.head h3{
+  color: #fff;
+  text-shadow: 0 0 5px #FF1414;
+  font-weight: normal;
+  font-style: italic;
+}
+.ui-btn-panel{
+  padding: 0 0vmax;
+  margin: 0 0vmax;
+}
+.ui-btn-panel ul{
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #990A9E;
+  padding:0 1vmax;
+  margin:0 0.1vmax;
+}
+.ui-btn-panel ul li{
+  list-style:none;
+  display:inline-block;
+  float:;
+  margin:0.6vmax;
+}
+.ui-btn-panel ul li button,
+#ready,
+#back {
+  font-weight: bold;
+  font-size: 0.8vmax;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px black;
+  border-radius: 8px;
+}

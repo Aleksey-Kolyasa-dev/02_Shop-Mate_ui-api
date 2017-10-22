@@ -1,0 +1,16 @@
+/*ACTIVE CLASSES*/
+
+.active{
+  border: 0px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #9700FF;
+}
+.active-button{
+border: 2px solid #f00 !important;
+border-radius: 8px;
+}
+.active-item{
+  border: 0px solid #0BF3AC;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #F60095;
+}

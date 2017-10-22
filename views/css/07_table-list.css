@@ -1,0 +1,35 @@
+/*TABLE TOGGLE BUTTOMS*/
+.ready {
+	float: ;
+	margin-top: 3vmax;
+}
+.ready li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+/*TABLE-LIST*/
+.table thead tr th{
+  font-size: 1.3vmax;
+  font-weight:bold;
+  color: #2463D0;
+  text-shadow: 0 0 5px #fff;
+}
+.table tbody tr td{
+  font-size: 0.8vmax;
+  font-weight:bold;
+  color: #fff;
+  text-align: ;
+  text-shadow: 0 0 5px black;
+}
+
+/**/
+.t-price,
+.t-units {
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  font-style: italic;
+  font-size: 1.2vmax;
+}
+

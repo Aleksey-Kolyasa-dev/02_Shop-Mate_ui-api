@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+ <head>
+	<title>Shop Mate</title>
+	<script type="text/javascript">var start = new Date();</script><!-- to get document loading time in ms -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/01_main_css_libs/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/01_main_css_libs/jquery-ui-1.9.2.custom.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/00_workshop.css"/>
+    <link rel="stylesheet" type="text/css" href="css/01_main_containers.css"/>
+    <link rel="stylesheet" type="text/css" href="css/02_menu_panel.css"/>
+    <link rel="stylesheet" type="text/css" href="css/03_item-main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/04_active-classes.css"/>
+    <link rel="stylesheet" type="text/css" href="css/05_basket.css"/>
+    <link rel="stylesheet" type="text/css" href="css/06_scrollUp.css"/>
+    <link rel="stylesheet" type="text/css" href="css/07_table-list.css"/>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/01_main_libs/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/01_main_libs/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/01_main_libs/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/02_categories/01_vegatables.js"></script>
+    <script type="text/javascript" src="js/02_categories/02_fruits.js"></script>
+    <script type="text/javascript" src="js/02_categories/03_pickles.js"></script>
+    <script type="text/javascript" src="js/02_categories/04_meat.js"></script>
+    <script type="text/javascript" src="js/02_categories/05_fish.js"></script>
+    <script type="text/javascript" src="js/02_categories/06_milk.js"></script>
+	<script type="text/javascript" src="js/02_categories/07_freezing.js"></script>
+	<script type="text/javascript" src="js/02_categories/08_grocery.js"></script>
+	<script type="text/javascript" src="js/02_categories/09_bred.js"></script>
+	<script type="text/javascript" src="js/02_categories/10_sweets.js"></script>
+	<script type="text/javascript" src="js/02_categories/11_drinks.js"></script>
+	<script type="text/javascript" src="js/02_categories/12_chemicals.js"></script>
+	<script type="text/javascript" src="js/02_categories/13_hygiene.js"></script>
+	<script type="text/javascript" src="js/02_categories/14_items.js"></script>
+
+
+    <script type="text/javascript" src="js/workshop00.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/01_category_menu.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/02_items_default_data.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/03_item_ui_buttons.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/04_shelf-basket_functional.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/05_scrollUp.js"></script>
+    <script type="text/javascript" src="js/03_main_scripts/06_table-list.js"></script>
+    
+    <script type="text/javascript" src="js/ready.js"></script>
+   
+
+</head>
+<body class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+	
+	 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container-main" id="topPsn">
+		
+				<!-- ***row header-main-->
+				<div class="row header-main">
+				  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-left header" >
+					<h1>SHOPPING MATE</h1>
+					<h1 id="time"></h1>
+				  </div>
+				  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center">
+						<ul class="col-lg-12 ready" hidden="true">
+							<li><button class="btn  btn-danger text-uppercase" id='ready' >создать список</button></li>
+							<li><button class="btn  btn-success text-uppercase" id='back' >назад</button></li>
+						</ul>
+					</div>
+				</div><!-- //***row header-main-->
+
+				<!-- ***row menu-main-->
+				<div class="row menu-main">
+				  <!-- head -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center head">
+						 	<h3>КАТЕГОРИИ ТОВАРОВ</h3>
+						</div>
+					</div><!-- //head -->
+					
+					<!-- pannel -->
+					<div class="row " style="padding: 0">
+						<div class="  ui-btn-panel">
+						  <ul class="">
+							<li><button class="btn btn-success text-uppercase" id='vegetables'>Овощи</button></li>
+							<li><button class="btn btn-success text-uppercase" id='fruits'>Фрукты</button></li>
+							<li><button class="btn btn-success text-uppercase" id='pickles'>соления</button></li>
+							<li><button class="btn btn-primary text-uppercase" id='meat'>мясо</button></li>
+							<li><button class="btn btn-primary text-uppercase" id='fish'>рыба</button></li>
+							<li><button class="btn btn-primary text-uppercase" id='milk'>молочка</button></li>
+							<li><button class="btn btn-default text-uppercase" id='freezing'>заморозка</button></li>
+							<li><button class="btn btn-warning text-uppercase" id='grocery'>бакалея</button></li>
+							<li><button class="btn btn-warning text-uppercase" id='bred'>выпечка</button></li>
+							<li><button class="btn btn-warning text-uppercase" id='sweets'>кондитерские</button></li>
+							<li><button class="btn btn-info    text-uppercase" id='drinks'>напитки</button></li>
+							<li><button class="btn btn-info    text-uppercase" id='chemicals'>химия</button></li>
+							<li><button class="btn btn-info    text-uppercase" id='hygiene'>гигиена</button></li>
+							<li><button class="btn btn-info    text-uppercase" id='items'>предметы</button></li>
+						  </ul>
+						  
+						</div>
+					</div>
+					<!-- //pannel -->
+				</div>
+				<!-- //***row menu-main-->
+
+
+
+				<!-- ***row content-main-->
+				<div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 content-main">
+		  			
+		  
+							<!-- **left-main -->
+							<div class="col-xs-7 col-sm-9 col-md-9 col-lg-9 left-main">
+							
+								 <!-- *goods -->
+								 <div class="row ">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  goods"  >
+									 
+
+									 	<!-- VEGETABLES CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  vegetables category"  >
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //VEGETABLES CATEGORY -->
+										
+									  
+									  	<!-- FRUITS CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  fruits category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //FRUITS CATEGORY -->
+
+
+									  	<!-- PICKLES CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  pickles category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //PICKLES CATEGORY -->
+
+
+									  	<!-- MEAT CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  meat category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //MEAT CATEGORY -->
+
+
+									  	<!-- FISH CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  fish category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //FISH CATEGORY -->
+
+
+									  	<!-- MILK CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  milk category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //MILK CATEGORY -->
+
+
+									  	<!-- FREEZING CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  freezing category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //FREEZING CATEGORY -->
+
+
+									  	<!-- GROCERY CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  grocery category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //GROCERY CATEGORY -->
+
+
+									  	<!-- BRED CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  bred category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //BRED CATEGORY -->
+
+
+									  	<!-- SWEETS CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  sweets category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //SWEETS CATEGORY -->
+
+
+									  	<!-- DRINKS CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  drinks category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //DRINKS CATEGORY -->
+
+
+									  	<!-- CHEMICALS CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  chemicals category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //CHEMICALS CATEGORY -->
+
+
+									  	<!-- HYGIENE CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  hygiene category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //HYGIENE CATEGORY -->
+
+
+									  	<!-- ITEMS CATEGORY -->
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  items category"  >	  	
+											<!-- dynamic generated content -->
+										</div>
+									  	<!-- //ITEMS CATEGORY -->
+
+									  
+									 </div><!-- //*goods -->
+								</div><!-- //row goods -->	
+							
+
+							</div>
+							<!-- //**left-main -->
+						  					  
+				
+
+
+
+						  	<!-- **right-main -->
+							<div class="col-xs-5 col-sm-3 col-md-3 col-lg-3 right-main">
+									
+									<!-- basket -->
+									<div class="row">
+										<div class="col-xs-12 col-sm-12  col-md-12 col-lg-12 text-center basket " >
+											<div class="basket-header">
+													
+													<span class="badge-my basket-goods-num">0</span>
+													
+													<h2 class="glyphicon glyphicon-shopping-cart text-right"></h2>
+
+													<ul class="col-xs-12 col-sm-12  col-md-12 col-lg-12 text-center total-top" hidden="true">
+														<li class="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+															<h3>Total $ <span class="basket-goods-summ">0.00</span></h3>
+														</li>
+													</ul>
+												
+													<div class="basket-head col-xs-12 col-sm-12  col-md-12 col-lg-12"></div>
+												
+													<ul class="col-xs-12 col-sm-12  col-md-12 col-lg-12 text-center total-bottom" hidden="true">
+														<li class="col-xs-12 col-sm-12  col-md-12 col-lg-12">
+															<h3>Total $ <span class="basket-goods-summ">0.00</span></h3>
+														</li>
+													</ul>
+
+												
+													<div class="basket-footer" style="margin-top: 700vmax">.</div>										
+											</div>			
+										</div>
+									</div><!-- //basket row-->
+							</div>
+							<!-- //**right-main -->
+	
+
+				</div>
+				<!-- //***row content-main-->
+
+
+
+
+				<!-- table-container -->
+				<div class="row table-container" hidden="true">
+				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 table-responsive">
+					<table class="table table-condenced ">
+						
+						<thead >
+							<tr class="text-center">
+								<th class="text-center">
+									<span></span>
+								</th >
+								<th class="text-center">
+									<span></span>
+								</th>
+								<th class="text-center">
+									<span></span>
+								</th>
+								<th class="text-center">
+									<span></span>
+								</th>
+							</tr>
+						</thead>
+						
+						<tbody class="t-dynamic-list">
+							<tr>
+								<td>
+									<span class="t-name"></span>
+								</td>
+								<td>
+									<span class="t-qty"></span>
+								</td>
+								<td class="text-center">
+									<span class="t-units">Total:</span>
+								</td>
+								<td class="text-center">
+									<span class="t-price"></span>
+								</td>
+							</tr> 
+						</tbody>
+					
+					</table>
+				  </div>
+				</div>
+				<!-- //table-container -->
+
+
+		
+	 </div><!-- //container-main-->
+	 
+	 <!-- Scroll Up Button -->
+	 <div id="scrollup">
+	 	<img class="img-circle" alt="Прокрутить вверх" src="images/arrow.png">
+	 </div> 
+	 <!-- //Scroll Up Button -->
+
+	<div style="margin-top: 1800px">.</div>
+</body>
+
+</html>
